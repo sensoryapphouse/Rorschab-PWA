@@ -2,16 +2,16 @@
 <html>
 
 <head>
-<title>Rorschab - relaxing digital art effects</title>
-<link rel="manifest" href="manifest.json">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
- <link href="css/index.css" rel="stylesheet"/>
-<script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
-<script type="text/javascript" src="webgl-utils.js"></script>
-<script type="text/javascript" src="main.js"></script>
+	<title>Rorschab - relaxing digital art effects</title>
+	<link rel="manifest" href="manifest.json">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link href="css/index.css" rel="stylesheet" />
+	<script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+	<script type="text/javascript" src="webgl-utils.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 
-<script id="shader-1-fs" type="f">
+	<script id="shader-1-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -228,7 +228,7 @@ void main(void /*out vec4 fragColor, in vec2 fragCoord */)
 
 }
 </script>
-<script id="shader-2-fs" type="f">
+	<script id="shader-2-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -429,7 +429,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-3-fs" type="f">
+	<script id="shader-3-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -628,7 +628,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-4-fs" type="f">
+	<script id="shader-4-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -827,7 +827,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-5-fs" type="f">
+	<script id="shader-5-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -1027,7 +1027,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-6-fs" type="f">
+	<script id="shader-6-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -1234,7 +1234,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-7-fs" type="f">
+	<script id="shader-7-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -1441,7 +1441,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-8-fs" type="f">
+	<script id="shader-8-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -1649,7 +1649,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-9-fs" type="f">
+	<script id="shader-9-fs" type="f">
    // http://glslsandbox.com/e#38802.0
 precision highp float;
 uniform vec2 resolution;
@@ -1859,7 +1859,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-10-fs" type="f">
+	<script id="shader-10-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -2066,8 +2066,8 @@ void main(void)
     gl_FragColor = vec4(final_col, 1.);
 
 }
-</script>  
-<script id="shader-11-fs" type="f">
+</script>
+	<script id="shader-11-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -2283,7 +2283,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-12-fs" type="f">
+	<script id="shader-12-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -2499,7 +2499,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-13-fs" type="f">
+	<script id="shader-13-fs" type="f">
    // http://glslsandbox.com/e#38802.0
 precision highp float;
 uniform vec2 resolution;
@@ -2718,7 +2718,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-14-fs" type="f">
+	<script id="shader-14-fs" type="f">
    // http://glslsandbox.com/e#38802.0
 precision highp float;
 uniform vec2 resolution;
@@ -2935,7 +2935,7 @@ void main(void)
 
 }
 </script>
-<script id="shader-15-fs" type="f">
+	<script id="shader-15-fs" type="f">
 precision highp float;
 uniform vec2 resolution;
 uniform vec2 mouse;
@@ -3150,36 +3150,38 @@ void main(void)
 }
 </script>
 
-<script id="shader-vs" type="v">
+	<script id="shader-vs" type="v">
 attribute vec3 aVertexPosition;attribute vec2 aTextureCoord;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;void main(void){gl_Position=uPMatrix*uMVMatrix*vec4(aVertexPosition,1.);}
 </script>
 
 </head>
+
 <body>
-<div id="container">
-  <div id="main">
-    <canvas id="webgl-canvas"  style="border: none;" width="1500" height="1000"></canvas>
-    <splash class = "btn" enabled></splash>
-    <button class="btn" enabled></button>
-    <button1 class="btn" enabled></button1>
-    <button2 class="btn" enabled></button2>
-    <button3 class="btn" enabled></button3>
-    <buttonl class="btn" enabled></buttonl>
-    <buttonr class="btn" enabled></buttonr>
-    <audio id="audio" autobuffer="autobuffer" preload="auto">
-    <source src="plazma.mp3" type="audio/mp3" />
-    <source src="plazma.ogg" type="audio/ogg" />
-    <source src="plazma.aac" type="audio/aac" />
-    <audio id="audio1" autobuffer="autobuffer" preload="auto">
-    <source src="plazma1.mp3" type="audio/mp3" />
-    <source src="plazma1.ogg" type="audio/ogg" />
-    <source src="plazma1.aac" type="audio/aac" />
-    <audio id="audio2" autobuffer="autobuffer" preload="auto">
-     <source src="plazma2.mp3" type="audio/mp3" />
-    <source src="plazma2.ogg" type="audio/ogg" />
-    <source src="plazma2.aac" type="audio/aac" />
-</audio>
-    </div>
-  </div>
+	<div id="container">
+		<div id="main">
+			<canvas id="webgl-canvas" style="border: none;" width="1500" height="1000"></canvas>
+			<splash class="btn" enabled></splash>
+			<button class="btn" enabled></button>
+			<button1 class="btn" enabled></button1>
+			<button2 class="btn" enabled></button2>
+			<button3 class="btn" enabled></button3>
+			<buttonl class="btn" enabled></buttonl>
+			<buttonr class="btn" enabled></buttonr>
+			<audio id="audio" autobuffer="autobuffer" preload="auto">
+				<source src="plazma.mp3" type="audio/mp3" />
+				<source src="plazma.ogg" type="audio/ogg" />
+				<source src="plazma.aac" type="audio/aac" />
+				<audio id="audio1" autobuffer="autobuffer" preload="auto">
+					<source src="plazma1.mp3" type="audio/mp3" />
+					<source src="plazma1.ogg" type="audio/ogg" />
+					<source src="plazma1.aac" type="audio/aac" />
+					<audio id="audio2" autobuffer="autobuffer" preload="auto">
+						<source src="plazma2.mp3" type="audio/mp3" />
+						<source src="plazma2.ogg" type="audio/ogg" />
+						<source src="plazma2.aac" type="audio/aac" />
+					</audio>
+		</div>
+	</div>
 </body>
+
 </html>
