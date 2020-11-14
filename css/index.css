@@ -15,14 +15,14 @@ html, div, body, canvas {
   -webkit-app-region: drag;
   background: black;
   overflow: hidden;
-  filter: sepia(1) hue-rotate(230deg) saturate(2);
+  /* filter: sepia(1) hue-rotate(230deg) saturate(2); */
 }
 
 #container {
   display: -webkit-flex;
   -webkit-flex-direction: column;
   text-align: center;
-  filter: sepia(1) hue-rotate(230deg) saturate(2); /* // set mono colour green */
+  /* filter: sepia(1) hue-rotate(230deg) saturate(2); // set mono colour green */
 }
 
 
